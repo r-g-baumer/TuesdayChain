@@ -1,14 +1,18 @@
 package Chain;
 
 import java.util.Date;
+import java.util.ArrayList;
 
 /**
  * This will be the concrete object class for Blocks.
  */
 
 public class Block {
+
     public String hash;
     public String previousHash;
+    public String merkleRoot;
+    public ArrayList<Transaction> transactions = new ArrayList<Transaction>(); //our data will be a simple message.
     private String data; //data details TBD
     private long timeStamp;
     private int nonce;
